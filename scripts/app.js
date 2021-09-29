@@ -24,4 +24,6 @@ const handleFadeIn = () => {
 
 }
 
+handleFadeIn()
+
 document.addEventListener('scroll', handleFadeIn)
