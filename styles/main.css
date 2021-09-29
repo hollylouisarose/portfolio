@@ -166,6 +166,32 @@ footer {
   width: 100vw;
 }
 
+.progress-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}
+
+.dot-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border: solid 2px var(--black);
+  border-radius: 50%;
+  z-index: 2;
+  margin-bottom: 40px;
+}
 
 /* if you want to change the original color
 .devicon-devicon-plain path {
