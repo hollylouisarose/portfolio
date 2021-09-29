@@ -11,6 +11,15 @@
 
 /* Global styles */
 
+:root {
+  --black:#1B1918;
+  --white: #FCFCFC;
+  --green: #6C7335;
+  --brown: #864830;
+  --primarytype: calluna, serif;
+  --accenttype: poppins, sans-serif;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -21,10 +30,11 @@
 }
 
 body {
+  background: var(--white);
   max-width: 1600px;
   width: 90vw;
   margin: 0 auto;
-  font-family: calluna, serif;
+  font-family: var(--primarytype);
   font-size: 16px;
   line-height: 1.5;
   overflow-x: hidden;
@@ -53,14 +63,14 @@ h4 {
 }
 
 h5 {
-  font-family: poppins, sans-serif;
+  font-family: var(--accenttype);
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 h6 {
-  font-family: poppins, sans-serif;
+  font-family: var(--accenttype);
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
@@ -82,6 +92,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+  color: var(--black);
 }
 
 /* Nav styles */
@@ -118,6 +129,7 @@ footer {
 .intro {
   display: flex;
   justify-content: flex-start;
+  margin-top: 80px;
   margin-bottom: 260px;
 }
 
