@@ -22,7 +22,7 @@
 
 body {
   max-width: 1600px;
-  width: 95vw;
+  width: 90vw;
   margin: 0 auto;
   font-family: calluna, serif;
   font-size: 16px;
@@ -31,7 +31,7 @@ body {
 }
 
 section {
-  margin-bottom: 320px;
+  margin-bottom: 200px;
 }
 
 h1, h3 {
@@ -56,6 +56,14 @@ h5 {
   font-family: poppins, sans-serif;
   font-size: 16px;
   font-weight: 600;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
@@ -107,6 +115,12 @@ footer {
 
 /* Individual section styles */
 
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 260px;
+}
+
 .bio-skills {
   display: flex;
   flex-wrap: wrap;
@@ -132,7 +146,7 @@ footer {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .container div {
