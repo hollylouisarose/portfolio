@@ -7,13 +7,13 @@
   <title>Holly Stratton</title>
   <link rel="stylesheet" href="./styles/normalize.css"></link>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-  <link rel="stylesheet" href="./styles/main.css"></link>
+  <link rel="stylesheet" href="./styles/main.css" ></link>
   <script src="scripts/app.js" defer></script>
 </head>
 <body>
-  <nav>
+  <nav class="main-nav">
     <h1>Holly Stratton</h1>
-    <div class="topnav-links">
+    <div class="main-nav-links">
       <ul>
         <li>
           <a 
@@ -38,7 +38,7 @@
   </section>
 
   <section class="bio-skills">
-    <div>
+    <div class="bio-info">
       <h3>
         I have an insatiable curiosity about the mechanics behind the magic. 
       </h3>
@@ -50,9 +50,8 @@
       </p>
     </div>
     <div>
-    <div>
-      <div class="confident-skills">
-        <h5>Confident in:</h5>
+      <h5>Confident in:</h5>
+      <div class="skills">
         <div>
           <i class="devicon-html5-plain" alt="html"></i>
           <p>HTML</p>
@@ -74,8 +73,8 @@
           <p>Figma</p>
         </div>
       </div>
-      <div class="comfortable-skills">
-        <h5>Getting comfortable with:</h5>
+      <h5>Getting comfortable with:</h5>
+      <div class="skills">
         <div>
           <i class="devicon-sass-original" alt="sass"></i>
           <p>Sass</p>
@@ -117,8 +116,8 @@
           <p>PostgeSQL</p>
         </div>
       </div>
-      <div class="new-to-skills">
-        <h5>New to:</h5>
+      <h5>New to:</h5>
+      <div class="skills">
         <div>
           <i class="devicon-heroku-original" alt="heroku"></i>
           <p>Heroku</p>
@@ -129,10 +128,11 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
 
   <section class="projects">
+    <h3>Projects</h3>
+    <div class="container">
     <div>
       <img />
       <h4>Moodible</h4>
@@ -158,57 +158,62 @@
       >Go to app</a>
       <a>View on GitHub</a>
     </div>
+    </div>
   </section>
 
   <section class="projects">
-    <div>
-      <img />
-      <h4>Choose Your Hero</h4>
-      <h5>Top trumps style hero game</h5>
-      <p>App built in 48 hour pair-programming hackathon using React.js and CSS and a public API of superheroes</p>
-      <a 
-      href="https://choose-your-hero.netlify.app/"
-      target="_blank" rel="noopener noreferrer"
-      >Check it out</a>
-      <a 
-      href="https://github.com/hollylouisarose/sei-project-two"
-      target="_blank" rel="noopener noreferrer"
-      >View on GitHub</a>
-    </div>
-    <div>
-      <img />
-      <h4>Ms PacMan</h4>
-      <h5>Grid based game</h5>
-      <p>A one week challenge to build a grid based game using JavaScript, HTML and CSS.</p>
-      <a 
-      href="https://hollylouisarose.github.io/sei-project-one/"
-      target="_blank" rel="noopener noreferrer"
-      >Check it out</a>
-      <a 
-      href="https://github.com/hollylouisarose/sei-project-one"
-      target="_blank" rel="noopener noreferrer"
-      >View on GitHub</a>
-    </div>
+    <div class="container">
+      <div>
+          <img />
+          <h4>Choose Your Hero</h4>
+          <h5>Top trumps style hero game</h5>
+          <p>App built in 48 hour pair-programming hackathon using React.js and CSS and a public API of superheroes</p>
+          <a 
+          href="https://choose-your-hero.netlify.app/"
+          target="_blank" rel="noopener noreferrer"
+          >Check it out</a>
+          <a 
+          href="https://github.com/hollylouisarose/sei-project-two"
+          target="_blank" rel="noopener noreferrer"
+          >View on GitHub</a>
+      </div>
+      <div>
+          <img />
+          <h4>Ms PacMan</h4>
+          <h5>Grid based game</h5>
+          <p>A one week challenge to build a grid based game using JavaScript, HTML and CSS.</p>
+          <a 
+          href="https://hollylouisarose.github.io/sei-project-one/"
+          target="_blank" rel="noopener noreferrer"
+          >Check it out</a>
+          <a 
+          href="https://github.com/hollylouisarose/sei-project-one"
+          target="_blank" rel="noopener noreferrer"
+          >View on GitHub</a>
+      </div>
+  </div>
   </section>
 
   <section class="experience">
     <h3>Experience</h3>
-    <div>
-      <p>Software Engineering, General Assembly, Remote 06/2021–09/2021</p>
-      <p>12-week immersive course that greatly accelerated my coding skills, especially in JavaScript, React.js, HTML and CSS. I participated in daily stand-ups and online lessons, coding labs, pair-coding, group and individual coding projects and learnt to build full-stack apps.</p>
-    </div>
-    <div>
-      <p>Freelance, A New Look At, London (01/2017-2021)</p>
-      <p>I helped my mother found a business. My responsibilities included workshop design and delivery, product design, photography, videography (including post production) and social media scheduling. Workshop clients included: Cushman and Wakefield, Second Home and Hatch Enterprise.</p>
-    </div>
-    <div>
-      <p>Freelance Studio Assistant, JJ Studios (Snap Studios), London (07/2014 - 04/2016)</p>
-      <p>I worked as a studio assistant in a fast paced dry hire studio, assisting with setup and maintenance for the studios and equipment.</p>
-    </div>
-    <div>
-      <p>Freelance filmmaker (04/2013 - 12/2016)</p>
-      <p>I freelanced in camera and lighting in the film industry. My responsibilities included camera and lighting equipment setup, breakdown and use, assisting senior crew members, videography for motion capture (for The Imaginarium Studios) and data handling. Notable productions: ‘Star Wars: The Force Awakens’ 2015, ‘Mowgli: Legend of the Jungle’ 2018,  ‘Adventure of a lifetime’ Coldplay 2015.</p>
-    </div>
+      <div class="container">
+        <div>
+          <p>Software Engineering, General Assembly, Remote 06/2021–09/2021</p>
+          <p>12-week immersive course that greatly accelerated my coding skills, especially in JavaScript, React.js, HTML and CSS. I participated in daily stand-ups and online lessons, coding labs, pair-coding, group and individual coding projects and learnt to build full-stack apps.</p>
+        </div>
+        <div>
+          <p>Freelance, A New Look At, London (01/2017-2021)</p>
+          <p>I helped my mother found a business. My responsibilities included workshop design and delivery, product design, photography, videography (including post production) and social media scheduling. Workshop clients included: Cushman and Wakefield, Second Home and Hatch Enterprise.</p>
+        </div>
+        <div>
+          <p>Freelance Studio Assistant, JJ Studios (Snap Studios), London (07/2014 - 04/2016)</p>
+          <p>I worked as a studio assistant in a fast paced dry hire studio, assisting with setup and maintenance for the studios and equipment.</p>
+        </div>
+        <div>
+          <p>Freelance filmmaker (04/2013 - 12/2016)</p>
+          <p>I freelanced in camera and lighting in the film industry. My responsibilities included camera and lighting equipment setup, breakdown and use, assisting senior crew members, videography for motion capture (for The Imaginarium Studios) and data handling. Notable productions: ‘Star Wars: The Force Awakens’ 2015, ‘Mowgli: Legend of the Jungle’ 2018,  ‘Adventure of a lifetime’ Coldplay 2015.</p>
+        </div>
+      </div>
   </section>
 
   <section class="interests">
@@ -216,27 +221,27 @@
   </section>
 
   <section class="contact">
-    <div>
-      <h4>Contact</h4>
-      <p>hlrstratton@gmail.com</p>
-      <a 
-      href="https://www.linkedin.com/in/hstratton/" 
-      target="_blank" rel="noopener noreferrer" 
-      >https://www.linkedin.com/in/hstratton/</a>
-      <a 
-      href="https://github.com/hollylouisarose" 
-      target="_blank" rel="noopener noreferrer"
-      >https://github.com/hollylouisarose</a>
-    </div>
-    
+    <h3>Contact</h3>
+      <div class="container">
+          <div>
+            <p>hlrstratton@gmail.com</p>
+            <a 
+            href="https://www.linkedin.com/in/hstratton/" 
+            target="_blank" rel="noopener noreferrer" 
+            >https://www.linkedin.com/in/hstratton/</a>
+            <a 
+            href="https://github.com/hollylouisarose" 
+            target="_blank" rel="noopener noreferrer"
+            >https://github.com/hollylouisarose</a>
+          </div>   
+      </div>
   </section>
   
 
   <footer>
-    <nav>
-      <div class="footernav-links">
-        <p>hlrstratton@gmail.com</p>
+    <nav class="footer-nav">
         <ul>
+          <li> hlrstratton@gmail.com</li>
           <li>
             <a 
               href="https://www.linkedin.com/in/hstratton/" 
@@ -252,7 +257,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   </footer>
 
