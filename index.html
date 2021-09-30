@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./styles/normalize.css"></link>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
   <link rel="stylesheet" href="./styles/main.css" ></link>
-  <script src="scripts/app.js" defer></script>
+  <script src="scripts/fadein.js" defer></script>
+  <script src="scripts/scroll.js" defer></script>
 </head>
 <body>
   <nav class="main-nav">
@@ -33,22 +34,14 @@
     </div>
   </nav>
 
-  <div class="progress-indicator">
-    <div class="dot-container">
-      <span class="dot" id="dot1"></span>
-      <span class="dot" id="dot2"></span>
-      <span class="dot" id="dot3"></span>
-      <span class="dot" id="dot4"></span>
-      <span class="dot" id="dot5"></span>
-      <span class="dot" id="dot6"></span>
-    </div>
+  <div class="progress-bar">
   </div>
 
-  <section class="intro">
+  <section class="intro" data-sectionno="1/6">
     <h2>Hi, I’m Holly! I’m looking for opportunities as a junior developer where I can continue to improve my skills and learn new languages and frameworks.</h2>
   </section>
 
-  <section class="bio-skills">
+  <section class="bio-skills" data-sectionno="2/6">
     <div class="bio-info">
       <h3>
         I have an insatiable curiosity about the mechanics behind the magic. 
@@ -141,7 +134,7 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" data-sectionno="3/6">
     <h3>Projects</h3>
     <div class="container">
     <div>
@@ -172,7 +165,7 @@
     </div>
   </section>
 
-  <section class="projects">
+  <section class="projects" data-sectionno="3/6">
     <div class="container">
       <div>
           <img />
@@ -205,7 +198,7 @@
   </div>
   </section>
 
-  <section class="experience">
+  <section class="experience" data-sectionno="4/6">
     <h3>Experience</h3>
       <div class="container">
         <div>
@@ -227,14 +220,14 @@
       </div>
   </section>
 
-  <section class="interests">
+  <section class="interests" data-sectionno="5/6">
     <h3>Interests</h3>
       <div class="container">
         <p>Add interests content here</p>
       </div> 
   </section>
 
-  <section class="contact">
+  <section class="contact" data-sectionno="6/6">
     <h3>Contact</h3>
       <div class="container">
           <div>
