@@ -12,10 +12,8 @@
 /* Global styles */
 
 :root {
-  --black:#3c3c3c;
+  --black:#292929;
   --white: #FCFCFC;
-  --grey: #fbfbf9;
-  --accent: #3c3c3c;
   --primarytype: calluna, serif;
   --accenttype: poppins, sans-serif;
 }
@@ -40,6 +38,16 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   background: var(--grey);
+  transition: all 0.2s ease;
+}
+
+.dark-theme {
+  background-color: var(--black);
+  color: var(--white)
+}
+
+.dark-theme h2, .dark-theme a {
+  color: var(--white);
 }
 
 section {
@@ -56,7 +64,6 @@ h2 {
   line-height: 1.2;
   max-width: 920px;
   width: 100vw;
-  color: var(--accent);
 }
 
 h4 {
@@ -188,7 +195,7 @@ div.progress-bar{
   left: 0;
   width: 0%;
   height: 6px;
-  background-color: var(--accent);
+  background-color: var(--black);
   z-index: 1;
   transition: background-color 0.5s ease;
 }
