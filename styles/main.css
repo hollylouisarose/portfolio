@@ -12,10 +12,10 @@
 /* Global styles */
 
 :root {
-  --black:#1B1918;
+  --black:#3c3c3c;
   --white: #FCFCFC;
-  --green: #6C7335;
-  --brown: #864830;
+  --grey: #fbfbf9;
+  --accent: #3c3c3c;
   --primarytype: calluna, serif;
   --accenttype: poppins, sans-serif;
 }
@@ -32,12 +32,14 @@
 body {
   background: var(--white);
   max-width: 1600px;
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
   font-family: var(--primarytype);
   font-size: 16px;
+  color: var(--black);
   line-height: 1.5;
   overflow-x: hidden;
+  background: var(--grey);
 }
 
 section {
@@ -54,6 +56,7 @@ h2 {
   line-height: 1.2;
   max-width: 920px;
   width: 100vw;
+  color: var(--accent);
 }
 
 h4 {
@@ -94,13 +97,17 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--black);
+  border-bottom: solid 2px var(--white);
+}
+
+a:hover {
+  border-bottom: solid 2px var(--accent);
 }
 
 /* Nav styles */
 
 .main-nav, .footer-nav {
   display: flex;
-  width: 90vw;
   max-width: 1600px;
   justify-content: space-between;
   align-items: center;
@@ -117,7 +124,7 @@ a {
 /* Footer styles */
 
 footer {
-  border-top: solid 1px black;
+  border-top: solid 2px var(--accent);
 }
 
 .footer-nav {
@@ -174,40 +181,14 @@ footer {
   width: 100vw;
 }
 
-.progress-indicator {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 50%;
-  right: 28px;
-  transform: translateY(-50%);
-}
-
-.dot-container {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.dot {
-  height: 15px;
-  width: 15px;
-  border: solid 2px var(--black);
-  border-radius: 50%;
-  z-index: 2;
-  margin-bottom: 40px;
-}
 
 div.progress-bar{
   position: fixed;
   top: 0;
   left: 0;
   width: 0%;
-  height: 5px;
-  background-color: var(--black);
+  height: 6px;
+  background-color: var(--accent);
   z-index: 1;
   transition: background-color 0.5s ease;
 }
