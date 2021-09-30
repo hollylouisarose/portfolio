@@ -75,10 +75,11 @@ h6 {
   font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
+  max-width: 420px;
 }
 
 p {
-  max-width: 500px;
+  max-width: 420px;
   width: 100vw;
 }
 
@@ -136,6 +137,7 @@ footer {
 .bio-skills {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .bio-info {
@@ -143,22 +145,28 @@ footer {
   width: 100vw;
 }
 
-.bio-info h3 {
-  max-width: 640px;
-  width: 100vw;
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    width: 100vw;
 }
 
-.skills {
-    display: grid;
-    width: 500px;
-    grid-template-columns: repeat(4, 20%);
-    column-gap: 10px;
+.icon {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.icon p {
+  font-family: var(--accenttype);
+  font-size: 12px;
+  text-transform: uppercase;
+
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .container div {
