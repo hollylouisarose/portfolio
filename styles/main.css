@@ -132,6 +132,11 @@ img {
   border-top: solid 2px var(--white);
 }
 
+.dark-theme section.experience div.container div.inner-container:nth-child(2) {
+  border-left: solid 2px var(--white);
+  padding-left: 40px;
+}
+
 /* Nav styles */
 
 .main-nav {
