@@ -199,6 +199,7 @@ footer {
 
 .bio-skills {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -264,11 +265,79 @@ section.experience div.container div.inner-container:nth-child(2) {
 
 /* Media Queries */
 
-@media screen and (max-width: 600px) {
-  
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
 
+  .main-nav {
+    justify-content: flex-start;
+  }
+
+  .toggle {
+    right: 3%;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  section {
+    margin-bottom: 80px;
+  }
+
+  .bio-info p {
+    max-width: 500px;
+  }
+
+  .skills {
+    max-width: 540px;
+    margin-top: 24px;
+  }
+
+  section.projects:nth-child(5) > div:nth-child(2) > div:nth-child(2) > img:nth-child(1),
+  section.projects:nth-child(6) > div:nth-child(1) > div:nth-child(2) > img:nth-child(1) {
+    margin-top: 30px;
+}
+
+
+  section.contact div.container div div.container {
+    justify-content: flex-start;
+  }
+
+  section.experience div.container div.inner-container:nth-child(2),
   section.experience div.container div.inner-container:nth-child(2) {
     border-left: none;
     padding-left: 0;
   }
+
+
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background: blue;
+  }
+}
+
+
+
+section.experience div.container div.inner-container:nth-child(2) {
+  border-left: none;
+  padding-left: 0;
 }
