@@ -101,6 +101,11 @@ a:hover {
   border-bottom: solid 2px var(--black);
 }
 
+img {
+  max-width: 470px;
+  width: 100vw;
+}
+
 /* Dark theme styles */
 
 .dark-theme {
