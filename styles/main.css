@@ -243,6 +243,10 @@ div.progress-bar{
   transition: background-color 0.5s ease;
 }
 
+section.projects a {
+  margin-right: 12px;
+}
+
 section.experience div.container div.inner-container:nth-child(2) {
   border-left: solid 2px var(--black);
   padding-left: 40px;
