@@ -19,14 +19,11 @@
   --accenttype: poppins, sans-serif;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+ * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-}
+} 
 
 body {
   background: var(--white);
@@ -54,7 +51,7 @@ h2 {
   font-size: 48px;
   line-height: 1.2;
   max-width: 920px;
-  width: 100vw;
+  width: 90vw;
 }
 
 h4 {
@@ -77,11 +74,12 @@ h6 {
   line-height: 1.2;
   text-transform: uppercase;
   max-width: 420px;
+  width: 90vw;
 }
 
 p {
   max-width: 420px;
-  width: 100vw;
+  width: 90vw;
 }
 
 ul {
@@ -105,7 +103,7 @@ a:hover {
 
 img {
   max-width: 470px;
-  width: 100vw;
+  width: 90vw;
   margin-bottom: 24px;
 }
 
@@ -206,14 +204,14 @@ footer {
 
 .bio-info {
   max-width: 600px;
-  width: 100vw;
+  width: 90vw;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
     max-width: 400px;
-    width: 100vw;
+    width: 90vw;
 }
 
 .icon {
@@ -265,7 +263,7 @@ section.experience div.container div.inner-container:nth-child(2) {
 
 /* Media Queries */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 780px) {
   body {
     font-size: 18px;
   }
@@ -330,14 +328,38 @@ section.experience div.container div.inner-container:nth-child(2) {
 }
 
 @media screen and (max-width: 400px) {
+
   body {
-    background: blue;
+    width: 90vw;
   }
-}
 
+  h1 {
+    font-size: 20px;
+  }
 
+  h2  {
+    font-size: 28px;
+  }
 
-section.experience div.container div.inner-container:nth-child(2) {
-  border-left: none;
-  padding-left: 0;
+  h5 {
+    margin: 0;
+  }
+
+  .toggle {
+    top: 35px;
+    right: 5%;
+  }
+
+  section, .intro {
+    margin: 40px auto;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+  }
+
+  .main-nav ul {
+    margin: 0;
+  }
+
 }
