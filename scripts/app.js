@@ -41,11 +41,10 @@ const handleScroll = () => {
 }
 
 const handleColourTheme = () => {
-
   body.classList.toggle('dark-theme')
+
 }
 
-console.log(progressBar.classList)
 
 
 handleFadeIn()
