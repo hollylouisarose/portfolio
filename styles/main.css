@@ -95,6 +95,8 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--black);
+  border-bottom: solid 2px rgba(255, 255, 255, 0);
+  margin-bottom: 8px;
 }
 
 a:hover {
