@@ -107,6 +107,12 @@ img {
   margin-bottom: 24px;
 }
 
+.image-holder {
+  max-width: 470px;
+  width: 90vw;
+  height: 300px;
+}
+
 /* Dark theme styles */
 
 .dark-theme {
@@ -250,6 +256,35 @@ div.progress-bar{
 section.projects a {
   margin-right: 12px;
 }
+
+section.projects div.container div{
+  margin-right: 20px;
+}
+
+section.projects:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  background-image: url('../images/moodible.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.projects:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  background-image: url('../images/pawfectpal.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.projects:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+  background-image: url('../images/chooseyourhero.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.projects:nth-child(6) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  background-image: url('../images/mspacman.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 section.experience div.container div.inner-container:nth-child(2) {
   border-left: solid 2px var(--black);

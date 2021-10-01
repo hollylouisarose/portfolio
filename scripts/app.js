@@ -2,8 +2,11 @@ const animatedTags = document.querySelectorAll('section')
 const body = document.querySelector('body')
 const progressBar = document.querySelector('div.progress-bar')
 const button = document.querySelector('#toggle')
+const images = document.querySelectorAll('.image-holder')
 
 body.classList.remove('dark-theme')
+
+console.log(images)
 
 animatedTags.forEach(tag => {
   tag.style.opacity = 0
@@ -45,12 +48,11 @@ const handleColourTheme = () => {
   button.classList.toggle('sun-icon')
 }
 
-
-
 handleFadeIn()
 
 document.addEventListener('scroll', handleFadeIn)
 document.addEventListener('scroll', handleScroll)
 window.addEventListener('resize', handleFadeIn)
 button.addEventListener('click', handleColourTheme)
+
 
