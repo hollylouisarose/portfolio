@@ -42,7 +42,7 @@ const handleScroll = () => {
 
 const handleColourTheme = () => {
   body.classList.toggle('dark-theme')
-
+  button.classList.toggle('sun-icon')
 }
 
 
@@ -52,3 +52,5 @@ handleFadeIn()
 document.addEventListener('scroll', handleFadeIn)
 document.addEventListener('scroll', handleScroll)
 button.addEventListener('click', handleColourTheme)
+
+

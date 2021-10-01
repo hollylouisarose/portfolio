@@ -146,8 +146,21 @@ img {
   align-items: center;
 }
 
-#toggle {
+.toggle {
   position: fixed;
+  top: 40px;
+  right: 5%;
+  background-image: url('../images/moon.svg');
+  height: 40px;
+  width: 40px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #fff0;
+  cursor: pointer;
+}
+
+.sun-icon {
+  background-image: url('../images/sun.svg');
 }
 
 .main-nav-links ul, .footer-nav ul {
