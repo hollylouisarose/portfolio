@@ -61,7 +61,6 @@ h2 {
 h4 {
   font-size: 24px;
   line-height: 1.2;
-  margin: 0;
 }
 
 h5 {
@@ -88,6 +87,7 @@ p {
 
 ul {
   list-style: none;
+  list-style-type: none;
 }
 
 a {
@@ -374,10 +374,6 @@ section.experience div.container div.inner-container:nth-child(2) {
     font-size: 28px;
   }
 
-  h5 {
-    margin: 0;
-  }
-
   .toggle {
     top: 20px;
     right: 5%;
@@ -388,16 +384,11 @@ section.experience div.container div.inner-container:nth-child(2) {
   }
 
   .main-nav {
-    flex-wrap: wrap;
-    padding: 50px 8px 0 8px;
-  }
-
-  .main-nav ul {
-    margin: 0;
+    display: block;
   }
 
   .container div {
     width: 90vw;
-}
+  }
 
 }
