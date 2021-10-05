@@ -9,6 +9,7 @@ body.classList.remove('dark-theme')
 console.log(images)
 
 animatedTags.forEach(tag => {
+  console.log(tag.className)
   tag.style.opacity = 0
 })
 
@@ -51,6 +52,7 @@ const handleColourTheme = () => {
 }
 
 document.addEventListener('scroll', handleFadeIn)
+document.addEventListener('touchmove', handleFadeIn)
 document.addEventListener('scroll', handleScroll)
 window.addEventListener('resize', handleFadeIn)
 button.addEventListener('click', handleColourTheme)

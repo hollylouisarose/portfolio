@@ -21,6 +21,7 @@
 
  * {
   -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: none;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 } 
@@ -124,6 +125,10 @@ img {
   color: var(--white)
 }
 
+.dark-theme .main-nav {
+  background: var(--black);
+}
+
 .dark-theme h2, .dark-theme a {
   color: var(--white);
 }
@@ -150,7 +155,8 @@ img {
 .main-nav {
   width: 100%;
   padding: 16px 0;
-  z-index: 1;
+  background: var(--white);
+  z-index: 2;
 }
 
 .main-nav, .footer-nav {
@@ -162,7 +168,7 @@ img {
 
 .toggle {
   position: fixed;
-  top: 40px;
+  top: 30px;
   right: 5%;
   background-image: url('../images/moon.svg');
   height: 40px;
@@ -301,13 +307,9 @@ section.experience div.container div.inner-container:nth-child(2) {
 
 /* Media Queries */
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 810px) {
   body {
     font-size: 18px;
-  }
-
-  .main-nav {
-    justify-content: flex-start;
   }
 
   .toggle {
@@ -334,6 +336,15 @@ section.experience div.container div.inner-container:nth-child(2) {
     margin-bottom: 80px;
   }
 
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    justify-content: space-around;
+  }
+
   .bio-info p {
     max-width: 500px;
   }
@@ -341,6 +352,12 @@ section.experience div.container div.inner-container:nth-child(2) {
   .skills {
     max-width: 540px;
     margin-top: 24px;
+  }
+
+  .toggle {
+    top: 34px;
+    right: 50%;
+    transform: translateX(50%);
   }
 
   section.projects:nth-child(5) > div:nth-child(2) > div:nth-child(2) > img:nth-child(1),
@@ -354,7 +371,9 @@ section.experience div.container div.inner-container:nth-child(2) {
   }
 
   section.experience div.container div.inner-container:nth-child(2),
-  section.experience div.container div.inner-container:nth-child(2) {
+  section.experience div.container div.inner-container:nth-child(2),
+  .dark-theme section.experience div.container div.inner-container:nth-child(2),
+  .dark-theme section.experience div.container div.inner-container:nth-child(2){
     border-left: none;
     padding-left: 0;
   }
@@ -364,6 +383,14 @@ section.experience div.container div.inner-container:nth-child(2) {
 
   body {
     width: 90vw;
+    margin-top: 80px;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
   }
 
   h1 {
@@ -376,15 +403,12 @@ section.experience div.container div.inner-container:nth-child(2) {
 
   .toggle {
     top: 20px;
-    right: 5%;
+    right: 50%;
+    transform: translateX(60%);
   }
 
   section, .intro {
     margin: 40px auto;
-  }
-
-  .main-nav {
-    display: block;
   }
 
   .container div {
