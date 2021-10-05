@@ -39,7 +39,11 @@ body {
 }
 
 section {
-  margin-bottom: 200px;
+  margin-bottom: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
 }
 
 h1, h3 {
@@ -145,7 +149,7 @@ img {
 
 .main-nav {
   width: 100%;
-  padding: 16px;
+  padding: 16px 0;
   z-index: 1;
 }
 
@@ -228,7 +232,6 @@ footer {
 .icon p {
   font-family: var(--accenttype);
   font-size: 12px;
-  text-transform: uppercase;
 
 }
 
@@ -355,11 +358,6 @@ section.experience div.container div.inner-container:nth-child(2) {
     border-left: none;
     padding-left: 0;
   }
-
-
-
-
-
 }
 
 @media screen and (max-width: 400px) {
@@ -381,7 +379,7 @@ section.experience div.container div.inner-container:nth-child(2) {
   }
 
   .toggle {
-    top: 35px;
+    top: 20px;
     right: 5%;
   }
 
@@ -391,10 +389,15 @@ section.experience div.container div.inner-container:nth-child(2) {
 
   .main-nav {
     flex-wrap: wrap;
+    padding: 50px 8px 0 8px;
   }
 
   .main-nav ul {
     margin: 0;
   }
+
+  .container div {
+    width: 90vw;
+}
 
 }

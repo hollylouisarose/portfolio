@@ -54,5 +54,6 @@ document.addEventListener('scroll', handleFadeIn)
 document.addEventListener('scroll', handleScroll)
 window.addEventListener('resize', handleFadeIn)
 button.addEventListener('click', handleColourTheme)
+button.addEventListener('touch', handleColourTheme)
 
 
