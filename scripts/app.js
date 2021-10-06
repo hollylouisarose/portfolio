@@ -6,10 +6,14 @@ const images = document.querySelectorAll('.image-holder')
 
 body.classList.remove('dark-theme')
 
-animatedTags.forEach(tag => {
-  console.log(tag.className)
-  tag.style.opacity = 0
-})
+
+if (window.innerWidth > 400 ){
+  animatedTags.forEach(tag => {
+    console.log(tag.className)
+    tag.style.opacity = 0
+  })
+  
+}
 
 const handleFadeIn = () => {
 
@@ -61,8 +65,7 @@ const handleGifHoverEnter = (e) => {
 }
 
 const handleGifHoverExit = (e) => {
-  console.log(e.target.id)
-  console.log('exit')
+
   const image = e.target
   if (e.target.id === 'moodible'){
     image.style.backgroundImage = 'url(images/moodible.png)'
