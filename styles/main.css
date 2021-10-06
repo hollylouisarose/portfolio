@@ -215,7 +215,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .bio-info {
@@ -403,7 +403,7 @@ section.experience div.container div.inner-container:nth-child(2) {
 
   .toggle {
     top: 20px;
-    right: 50%;
+    right: 54%;
     transform: translateX(60%);
   }
 

@@ -41,7 +41,6 @@ const handleScroll = () => {
   const pageHeight = body.getBoundingClientRect().height
   const totalScrollDistance = pageHeight - window.innerHeight
   const percentage = pixels / totalScrollDistance
-  
   progressBar.style.width = `${100 * percentage}%`
 
 }
