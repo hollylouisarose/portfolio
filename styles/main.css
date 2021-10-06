@@ -271,25 +271,25 @@ section.projects div.container div{
   margin-right: 20px;
 }
 
-section.projects:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+#moodible {
   background-image: url('../images/moodible.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-section.projects:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+#pawfect-pal {
   background-image: url('../images/pawfectpal.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-section.projects:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+#choose-your-hero {
   background-image: url('../images/chooseyourhero.png');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-section.projects:nth-child(6) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+#ms-pacman {
   background-image: url('../images/mspacman.png');
   background-size: contain;
   background-repeat: no-repeat;
