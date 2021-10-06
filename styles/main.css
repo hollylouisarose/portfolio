@@ -107,7 +107,7 @@ a:hover {
 }
 
 img {
-  max-width: 470px;
+  max-width: 400px;
   width: 90vw;
   margin-bottom: 24px;
 }
@@ -157,6 +157,7 @@ img {
   padding: 16px 0;
   background: var(--white);
   z-index: 2;
+  transition: all 0.2s ease;
 }
 
 .main-nav, .footer-nav {
@@ -219,14 +220,14 @@ footer {
 }
 
 .bio-info {
-  max-width: 600px;
+  max-width: 520px;
   width: 90vw;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 300px;
     width: 90vw;
 }
 
@@ -247,7 +248,7 @@ footer {
 }
 
 .container div {
-  max-width: 500px;
+  max-width: 450px;
   width: 100vw;
 }
 
@@ -258,7 +259,7 @@ div.progress-bar{
   width: 0%;
   height: 6px;
   background-color: var(--black);
-  z-index: 1;
+  z-index: 3;
   transition: background-color 0.5s ease;
 }
 

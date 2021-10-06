@@ -15,7 +15,7 @@ animatedTags.forEach(tag => {
 
 const handleFadeIn = () => {
 
-  let delay = 0.25
+  let delay = 0.2
 
   animatedTags.forEach(tag => {
     const tagTop = tag.getBoundingClientRect().top
