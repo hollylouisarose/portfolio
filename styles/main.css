@@ -187,6 +187,7 @@ img {
   border: none;
   background-color: #fff0;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .sun-icon {
@@ -198,7 +199,7 @@ img {
 }
 
 .main-nav-links li, .footer-nav li {
-  padding-right: 16px;
+  padding-right: 8px;
 }
 
 /* Footer styles */
@@ -331,11 +332,11 @@ section.experience div.container div.inner-container:nth-child(2) {
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   h5 {
@@ -401,10 +402,13 @@ section.experience div.container div.inner-container:nth-child(2) {
     top: 0;
     width: 100%;
     height: 40px;
+    display: flex;
+    justify-content: center;
   }
 
   h1 {
     font-size: 20px;
+    padding-right: 40px;
   }
 
   h2  {
@@ -413,7 +417,7 @@ section.experience div.container div.inner-container:nth-child(2) {
 
   .toggle {
     top: 20px;
-    right: 54%;
+    right: 51%;
     transform: translateX(60%);
   }
 
@@ -423,6 +427,20 @@ section.experience div.container div.inner-container:nth-child(2) {
 
   .container div {
     width: 90vw;
+  }
+
+  .footer-nav {
+    justify-content: flex-start;
+  }
+
+  .footer-nav ul {
+    display: block;
+    list-style-type: none;
+    
+  }
+
+  .footer-nav li {
+    padding-bottom: 16px;
   }
 
 }
