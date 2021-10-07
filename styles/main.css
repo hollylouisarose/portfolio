@@ -102,7 +102,7 @@ a {
   margin-bottom: 8px;
 }
 
-a:hover :not(.image-holder-link) {
+a:hover {
   border-bottom: solid 2px var(--black);
 }
 
