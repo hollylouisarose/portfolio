@@ -219,7 +219,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   margin-top: 80px;
-  margin-bottom: 260px;
+  margin-bottom: 100px;
 }
 
 .bio-skills {
@@ -259,6 +259,11 @@ footer {
 
 .container div {
   max-width: 450px;
+  width: 100vw;
+}
+
+.links-container div {
+  max-width: 260px;
   width: 100vw;
 }
 
