@@ -14,7 +14,6 @@
 :root {
   --black:#292929;
   --white: #FCFCFC;
-  --pink: pink;
   --primarytype: calluna, serif;
   --accenttype: poppins, sans-serif;
 }
@@ -112,6 +111,10 @@ img {
   margin-bottom: 24px;
 }
 
+svg {
+  width: 50px;
+}
+
 .image-holder {
   max-width: 470px;
   width: 90vw;
@@ -140,6 +143,10 @@ img {
 
 .dark-theme h2, .dark-theme a {
   color: var(--white);
+}
+
+.dark-theme .icon {
+  fill: var(--white)
 }
 
 .dark-theme a:hover {
@@ -237,13 +244,14 @@ footer {
 .skills {
     display: flex;
     flex-wrap: wrap;
-    max-width: 300px;
+    max-width: 500px;
     width: 90vw;
 }
 
 .icon {
-  width: 80px;
+  width: 100px;
   margin-right: 10px;
+  fill: var(--black);
 }
 
 .icon p {
