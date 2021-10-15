@@ -6,7 +6,6 @@ const images = document.querySelectorAll('.image-holder')
 
 body.classList.remove('dark-theme')
 
-
 if (window.innerWidth > 400 ){
   animatedTags.forEach(tag => {
     console.log(tag.className)
@@ -60,12 +59,12 @@ const handleGifHoverEnter = (e) => {
     image.style.backgroundImage = 'url(images/chooseyourhero.gif)'
   } else if (e.target.id === 'ms-pacman'){
     image.style.backgroundImage = 'url(images/mspacman.gif)'
+  } else if (e.target.id === 'pawfect-pal'){
+    image.style.backgroundImage = 'url(images/pawfectpal.gif)'
   }
-
 }
 
 const handleGifHoverExit = (e) => {
-
   const image = e.target
   if (e.target.id === 'moodible'){
     image.style.backgroundImage = 'url(images/moodible.png)'
@@ -73,6 +72,8 @@ const handleGifHoverExit = (e) => {
     image.style.backgroundImage = 'url(images/chooseyourhero.png)'
   } else if (e.target.id === 'ms-pacman'){
     image.style.backgroundImage = 'url(images/mspacman.png)'
+  } else if (e.target.id === 'pawfect-pal'){
+    image.style.backgroundImage = 'url(images/pawfectpal.png)'
   }
 
 }
